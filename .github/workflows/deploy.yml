@@ -1,5 +1,10 @@
 name: Musicfun Deploy
 
+permissions:
+  id-token: write
+  pages: write   # Добавьте, если настраиваете деплой на GitHub Pages
+  contents: read # Обычно требуется для чтения кода репозитория
+
 on:
   push:
     branches: [master]
